@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('worker-add','WorkerController@add');
+Route::post('store-worker','WorkerController@store');
+Route::get('workers','WorkerController@all');
